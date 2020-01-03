@@ -1,0 +1,6 @@
+1#1#1#Hola este es un mensaje de prueba#2020-01-03 08:21:11.005515
+2#2#1#Hola este es un mensaje de prueba#2020-01-03 08:21:11.376201
+3#1#1#Hola este es un mensaje de prueba#2020-01-03 08:23:22.689961
+4#2#1#Hola este es un mensaje de prueba#2020-01-03 08:23:23.018264
+5#1#1#Hola este es un mensaje de prueba#2020-01-03 22:19:39.079037
+6#2#1#Hola este es un mensaje de prueba#2020-01-03 22:19:39.226447

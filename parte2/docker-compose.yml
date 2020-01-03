@@ -1,0 +1,55 @@
+version: '3'
+
+networks:
+    app-tier:
+        driver: bridge
+services:
+  servidorrabbit:
+    build: 
+      context: ./servidor
+    container_name: "servidorrabbit"
+    volumes:
+     - ./resultados:/app/logs
+    networks:
+        - app-tier
+    restart: on-failure
+    depends_on:
+        - rabbitmq
+  cliente1rabbit:
+    build: 
+      context: ./cliente1
+    container_name: "cliente1rabbit"
+    networks:
+        - app-tier
+    restart: on-failure
+    depends_on:
+      [servidorrabbit,rabbitmq]
+  cliente2rabbit:
+    build: 
+      context: ./cliente2
+    container_name: "cliente2rabbit"
+    networks:
+        - app-tier
+    restart: on-failure
+    depends_on:
+      [servidorrabbit,rabbitmq]
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    hostname: rabbit
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    labels:
+      NAME: rabbitmq
+    volumes:
+      - ./rabbitmq-isolated.conf:/etc/rabbitmq/rabbitmq.config
+
+    networks:
+        - app-tier
+    healthcheck:
+      test: [ "CMD", "nc", "-z", "localhost", "5672" ]
+      interval: 5s
+      timeout: 15s
+      retries: 1
+

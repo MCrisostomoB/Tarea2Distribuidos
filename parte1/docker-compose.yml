@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  servidor:
+    build: 
+      context: ./servidor
+    container_name: "servidor"
+    ports:
+      - "50051:50051"
+    volumes:
+     - ./resultados:/app/logs  
+  cliente1:
+    build: 
+      context: ./cliente1
+    container_name: "cliente1"
+    depends_on:
+      [servidor]
+  cliente2:
+    build: 
+      context: ./cliente2
+    container_name: "cliente2"
+    depends_on:
+      [servidor]
+

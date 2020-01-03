@@ -1,0 +1,11 @@
+id=xxx
+user=xxx
+pass=xxx
+2
+1
+4#xxx#Hola este es un mensaje de prueba
+2
+2
+3
+3
+5
