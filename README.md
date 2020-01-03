@@ -3,7 +3,7 @@
 * Para poder ejectuar tanto la parte 1 como la parte 2 de la Tarea es necesario ingresar a la carpeta parte 1 o parte 2 y dentro de ellas ejecutar docker-compose build y luego docker-compose up
 
 * Tanto para la parte 1 como 2 de la tarea se tiene un txt llamado "cliente.txt" en la carpeta de cliente, en la cual estan todos los mensajes que se enviaran desde el cliente al servidor. Este txt siempre debe terminar con el numero "5"  que es el de salir,y debe iniciar con el usuario y contraseña para la parte 1 y para la parte 2 se incluye la id, a continuacion se dara un ejemplo:
-*user=xxx
+	*user=xxx
 	*pass=xxx
 	*2
 	*1
