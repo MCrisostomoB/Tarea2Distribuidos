@@ -14,23 +14,23 @@
 	
 * El primer 2 despues del usuario y contraseña, corresponde a registrarse, y el 1 que viene corresponde a logearse.
 * Pasada esta etapa, son solamente comandos a realizar como por ejemplo :
-	*1-ver usuarios
-	*2- ver mensajes enviados
-	*3- ver mensajes recibidos
-	*4- enviar un mensaje
-	*5- Salir
+	* 1-ver usuarios
+	* 2- ver mensajes enviados
+	* 3- ver mensajes recibidos
+	* 4- enviar un mensaje
+	* 5- Salir
 *Un ejemplo de la parte 2 seria el siguiente:
-	*id=xxx
-	*user=xxx
-	*pass=xxx
-	*2
-	*1
-	*4#xxx#Hola este es un mensaje de prueba
-	*2
-	*2
-	*3
-	*3
-	*5
+	* id=xxx
+	* user=xxx
+	* pass=xxx
+	* 2
+	* 1
+	* 4#xxx#Hola este es un mensaje de prueba
+	* 2
+	* 2
+	* 3
+	* 3
+	* 5
 *Para la parte 2  cuando se seleccione la opcion 4, debe ser de la siguiente manera 4#id a quien se mandara#mensaje
 *Para la parte 1 cuando se selecciona la opcion 4, debe ser de la siguiente manera 4#id a quein se le mandara#mensaje#2
 * Todas las instrucciones anteriores son para modificar el archivo cliente.txt que se encuentran en las carpetas cliente 1 y 2 para la parte 2, para poder customizar el mandado de mensajes automaticos.
